@@ -15,6 +15,10 @@
 		842F1BCD240D98A1007F572F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842F1BCB240D98A1007F572F /* LaunchScreen.storyboard */; };
 		842F1BD8240D98A2007F572F /* BeerFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F1BD7240D98A2007F572F /* BeerFinderTests.swift */; };
 		842F1BE3240D98A2007F572F /* BeerFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F1BE2240D98A2007F572F /* BeerFinderUITests.swift */; };
+		842F1BF1240D9CA2007F572F /* amsterdam.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 842F1BF0240D9CA2007F572F /* amsterdam.jpg */; };
+		842F1BF5240D9CE7007F572F /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F1BF4240D9CE7007F572F /* CircleImage.swift */; };
+		842F1BF8240D9F71007F572F /* amsterdam_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 842F1BF7240D9F71007F572F /* amsterdam_small.png */; };
+		842F1BFA240DA092007F572F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F1BF9240DA092007F572F /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,11 @@
 		842F1BDE240D98A2007F572F /* BeerFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeerFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		842F1BE2240D98A2007F572F /* BeerFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerFinderUITests.swift; sourceTree = "<group>"; };
 		842F1BE4240D98A2007F572F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		842F1BF0240D9CA2007F572F /* amsterdam.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = amsterdam.jpg; path = ../../../Desktop/amsterdam.jpg; sourceTree = "<group>"; };
+		842F1BF3240D9CC6007F572F /* amsterdam.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = amsterdam.jpg; sourceTree = "<group>"; };
+		842F1BF4240D9CE7007F572F /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CircleImage.swift; path = BeerFinder/CircleImage.swift; sourceTree = SOURCE_ROOT; };
+		842F1BF7240D9F71007F572F /* amsterdam_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = amsterdam_small.png; path = ../../../../Desktop/amsterdam_small.png; sourceTree = "<group>"; };
+		842F1BF9240DA092007F572F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +108,14 @@
 		842F1BBF240D98A0007F572F /* BeerFinder */ = {
 			isa = PBXGroup;
 			children = (
+				842F1BF6240D9DEC007F572F /* Resources */,
 				842F1BC0240D98A0007F572F /* AppDelegate.swift */,
+				842F1BF4240D9CE7007F572F /* CircleImage.swift */,
+				842F1BF9240DA092007F572F /* MapView.swift */,
 				842F1BC2240D98A0007F572F /* SceneDelegate.swift */,
 				842F1BC4240D98A0007F572F /* ContentView.swift */,
 				842F1BC6240D98A1007F572F /* Assets.xcassets */,
+				842F1BF0240D9CA2007F572F /* amsterdam.jpg */,
 				842F1BCB240D98A1007F572F /* LaunchScreen.storyboard */,
 				842F1BCE240D98A1007F572F /* Info.plist */,
 				842F1BC8240D98A1007F572F /* Preview Content */,
@@ -134,6 +147,15 @@
 				842F1BE4240D98A2007F572F /* Info.plist */,
 			);
 			path = BeerFinderUITests;
+			sourceTree = "<group>";
+		};
+		842F1BF6240D9DEC007F572F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				842F1BF7240D9F71007F572F /* amsterdam_small.png */,
+				842F1BF3240D9CC6007F572F /* amsterdam.jpg */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,8 +262,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				842F1BF8240D9F71007F572F /* amsterdam_small.png in Resources */,
 				842F1BCD240D98A1007F572F /* LaunchScreen.storyboard in Resources */,
 				842F1BCA240D98A1007F572F /* Preview Assets.xcassets in Resources */,
+				842F1BF1240D9CA2007F572F /* amsterdam.jpg in Resources */,
 				842F1BC7240D98A1007F572F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +293,8 @@
 			files = (
 				842F1BC1240D98A0007F572F /* AppDelegate.swift in Sources */,
 				842F1BC3240D98A0007F572F /* SceneDelegate.swift in Sources */,
+				842F1BFA240DA092007F572F /* MapView.swift in Sources */,
+				842F1BF5240D9CE7007F572F /* CircleImage.swift in Sources */,
 				842F1BC5240D98A0007F572F /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

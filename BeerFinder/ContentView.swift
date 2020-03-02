@@ -6,15 +6,39 @@
 //  Copyright © 2020 Jurrian Lammerts. All rights reserved.
 //
 
+
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            MapView()
+                .edgesIgnoringSafeArea(.top)
+                .frame(height: 300)
+
+            CircleImage()
+                .offset(y: -120)
+                .padding(.bottom, -130)
+
+            VStack(alignment: .leading) {
+                Text("Brouwerij 't IJ")
+                    .font(.title)
+                HStack(alignment: .top) {
+                    Text("Amsterdam")
+                        .font(.subheadline)
+                    Spacer()
+                    Text("The Netherlands")
+                        .font(.subheadline)
+                }
+            }
+            .padding()
+
+            Spacer()
+        }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct ContentView_Preview: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
