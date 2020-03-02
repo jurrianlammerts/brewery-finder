@@ -10,37 +10,40 @@
 import SwiftUI
 
 struct BreweryDetail: View {
+    var brewery : Brewery
+    
     var body: some View {
         VStack {
-            MapView()
+            MapView(coordinate: brewery.locationCoordinate)
                 .edgesIgnoringSafeArea(.top)
                 .frame(height: 300)
-
-            CircleImage()
+            
+            CircleImage(image: brewery.image)
                 .offset(y: -120)
                 .padding(.bottom, -130)
-
+            
             VStack(alignment: .leading) {
-                Text("Brouwerij 't IJ")
+                Text(brewery.name)
                     .font(.title)
                 HStack(alignment: .top) {
-                    Text("Amsterdam")
+                    Text(brewery.city)
                         .font(.subheadline)
                     Spacer()
-                    Text("The Netherlands")
+                    Text(brewery.country)
                         .font(.subheadline)
                 }
             }
             .padding()
-
+            
             Spacer()
         }
+        .navigationBarTitle(Text(brewery.name), displayMode: .inline)
     }
 }
 
 struct BreweryDetail_Preview: PreviewProvider {
     static var previews: some View {
-        BreweryDetail()
+        BreweryDetail(brewery: breweryData[0])
     }
 }
 

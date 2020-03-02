@@ -15,7 +15,7 @@ struct Brewery: Hashable, Codable, Identifiable {
     fileprivate var imageName: String
     fileprivate var coordinates: Coordinates
     var country: String
-//    var rating: Int
+    var city: String
 
     var locationCoordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D(

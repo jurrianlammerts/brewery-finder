@@ -12,7 +12,7 @@ struct BreweryList: View {
     var body: some View {
         NavigationView {
             List(breweryData) { brewery in
-                NavigationLink(destination: BreweryDetail()) {
+                NavigationLink(destination: BreweryDetail(brewery: brewery)) {
                     BreweryRow(brewery: brewery)
                 }
             }
@@ -23,6 +23,11 @@ struct BreweryList: View {
 
 struct BreweryList_Previews: PreviewProvider {
     static var previews: some View {
-        BreweryList ()
+        ForEach(["iPhone SE", "iPhone XS Max"], id: \.self) { deviceName in
+            BreweryList()
+                .previewDevice(PreviewDevice(rawValue: deviceName))
+                .previewDisplayName(deviceName)
+        }
     }
 }
+
