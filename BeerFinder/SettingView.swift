@@ -11,8 +11,8 @@ import SwiftUI
 struct SettingView: View {
     
     var settingsList = [
-        Setting(id: 1, title: "Language", description: "Change the language of the App", isOn: false),
-        Setting(id: 2, title: "Time", description: "Change the time of the App", isOn: false)
+        Setting(id: 1, title: "Language", description: "Change the language of the App", values: ["Dutch", "English"]),
+        Setting(id: 2, title: "Time", description: "Change the time of the App", values: ["Dutch", "English"])
     ]
     
     var body: some View {

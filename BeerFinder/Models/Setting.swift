@@ -12,5 +12,5 @@ struct Setting {
     var id: Int
     var title: String
     var description: String
-    var isOn: Bool
+    var values: [String]
 }

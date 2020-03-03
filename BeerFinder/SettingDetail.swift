@@ -9,22 +9,23 @@
 import SwiftUI
 
 struct SettingDetail: View {
-    var setting : Setting
+    var setting: Setting
+    @State private var selectedIndex: Int = 0
+    
+    var langaugeOptions = ["Dutch", "English", "German"]
     
     var body: some View {
-        VStack {
-            HStack() {
-//                Toggle(isOn: false) {
-//                    setting.title
-//                }
-                
-                Text(setting.title)
-                
+        
+        Form {
+            Picker("Language", selection: $selectedIndex) {
+                ForEach(0..<langaugeOptions.count) {
+                    Text(self.langaugeOptions[$0])
+                }
             }
-            
         }
-        .navigationBarTitle(Text(setting.title))
+        
     }
+    
 }
 
 
