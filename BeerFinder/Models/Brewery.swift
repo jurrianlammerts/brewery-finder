@@ -12,6 +12,7 @@ import CoreLocation
 struct Brewery: Hashable, Codable, Identifiable {
     var id: Int
     var name: String
+    var description: String
     fileprivate var imageName: String
     fileprivate var coordinates: Coordinates
     var country: String

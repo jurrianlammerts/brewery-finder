@@ -1,158 +1,38 @@
 [
     {
-        "name": "Turtle Rock",
-        "category": "Featured",
-        "city": "Twentynine Palms",
-        "country": "USA",
-        "id": 1001,
-        "park": "Joshua Tree National Park",
+        "id": 10,
+        "name": "Brouwerij Noordt",
+        "description": "De bieren van Brouwerij Noordt hebben een herkenbare stijl. Doordrinkbaar, maar niet zonder smaak, met een duidelijk profiel dat altijd de grondstoffen laat spreken. Wij gebruiken zo min mogelijk kruiden of toevoegingen maar schuwen het experiment niet.",
+        "country": "The Netherlands",
+        "city": "Rotterdam",
         "coordinates": {
-            "longitude": -116.166868,
-            "latitude": 34.011286
+            "longitude": 4.48698,
+            "latitude": 51.933141
         },
-        "imageName": "amsterdam_small"
+        "imageName": "noord"
     },
     {
-        "name": "Silver Salmon Creek",
-        "category": "Lakes",
-        "city": "Port Alsworth",
-        "country": "USA",
-        "id": 1002,
-        "park": "Lake Clark National Park and Preserve",
+        "id": 20,
+        "name": "Brouwerij 't IJ",
+        "description": "Brouwerij 't IJ is een Amsterdamse brouwerij waar uitsluitend speciaalbieren gebrouwen worden. De brouwerij is gevestigd in het oosten van de stad. Het bier wordt op twee locaties gebrouwen. Aan de Funenkade, naast Molen de Gooyer, worden alle tapbieren van de brouwerij gebrouwen.",
+        "country": "The Netherlands",
+        "city": "Amsterdam",
         "coordinates": {
-            "longitude": -152.665167,
-            "latitude": 59.980167
+            "longitude": 4.939937,
+            "latitude": 52.367412
         },
-        "imageName": "amsterdam_small"
+        "imageName": "het_ij"
     },
     {
-        "name": "Chilkoot Trail",
-        "category": "Rivers",
-        "city": "Skagway",
-        "country": "USA",
-        "id": 1003,
-        "park": "Klondike Gold Rush National Historical Park",
+        "id": 201,
+        "name": "Tapperij de Eeuwige Jeugd",
+        "description": "We maken geen toverdrank waar je pardoes weer jong van wordt of grootste krachten van krijgt. Dat heb je allemaal ook niet nodig want je bent al een superheld. Maar zelfs Batman heeft soms een sidekick nodig.",
+        "country": "The Netherlands",
+        "city": "Amsterdam",
         "coordinates": {
-            "longitude": -135.334571,
-            "latitude": 59.560551
+            "longitude": 4.924641,
+            "latitude": 52.3616
         },
-        "imageName": "amsterdam_small"
-    },
-    {
-        "name": "St. Mary Lake",
-        "category": "Lakes",
-        "city": "Browning",
-        "country": "USA",
-        "id": 1004,
-        "park": "Glacier National Park",
-        "coordinates": {
-            "longitude": -113.536248,
-            "latitude": 48.69423
-        },
-        "imageName": "amsterdam_small"
-    },
-    {
-        "name": "Twin Lake",
-        "category": "Lakes",
-        "city": "Twin Lakes",
-        "country": "USA",
-        "id": 1005,
-        "park": "Lake Clark National Park and Preserve",
-        "coordinates": {
-            "longitude": -153.849883,
-            "latitude": 60.641684
-        },
-        "imageName": "amsterdam_small"
-    },
-    {
-        "name": "Lake McDonald",
-        "category": "Lakes",
-        "city": "West Glacier",
-        "country": "USA",
-        "id": 1006,
-        "park": "Glacier National Park",
-        "coordinates": {
-            "longitude": -113.934831,
-            "latitude": 48.56002
-        },
-        "imageName": "amsterdam_small"
-    },
-    {
-        "name": "Charley Rivers",
-        "category": "Rivers",
-        "city": "Eaking",
-        "country": "USA",
-        "id": 1007,
-        "park": "Charley Rivers National Preserve",
-        "coordinates": {
-            "longitude": -143.122586,
-            "latitude": 65.350021
-        },
-        "imageName": "amsterdam_small"
-    },
-    {
-        "name": "Icy Bay",
-        "category": "Lakes",
-        "city": "Icy Bay",
-        "country": "USA",
-        "id": 1008,
-        "park": "Wrangell-St. Elias National Park and Preserve",
-        "coordinates": {
-            "longitude": -141.518167,
-            "latitude": 60.089917
-        },
-        "imageName": "amsterdam_small"
-    },
-    {
-        "name": "Rainbow Lake",
-        "category": "Lakes",
-        "city": "Willow",
-        "country": "USA",
-        "id": 1009,
-        "park": "State Recreation Area",
-        "coordinates": {
-            "longitude": -150.086103,
-            "latitude": 61.694334
-        },
-        "imageName": "amsterdam_small"
-    },
-    {
-        "name": "Hidden Lake",
-        "category": "Lakes",
-        "city": "Newhalem",
-        "country": "USA",
-        "id": 1010,
-        "park": "North Cascades National Park",
-        "coordinates": {
-            "longitude": -121.17799,
-            "latitude": 48.495442
-        },
-        "imageName": "amsterdam_small"
-    },
-    {
-        "name": "Chincoteague",
-        "category": "Rivers",
-        "city": "Chincoteague",
-        "country": "USA",
-        "id": 1011,
-        "park": "Chincoteague National Wildlife Refuge",
-        "coordinates": {
-            "longitude": -75.383212,
-            "latitude": 37.91531
-        },
-        "imageName": "amsterdam_small"
-    },
-    {
-        "name": "Lake Umbagog",
-        "category": "Lakes",
-        "city": "Errol",
-        "country": "USA",
-        "id": 1012,
-        "park": "Umbagog National Wildlife Refuge",
-        "coordinates": {
-            "longitude": -71.056816,
-            "latitude": 44.747408
-        },
-        "imageName": "amsterdam_small"
+        "imageName": "eeuwige_jeugd"
     }
 ]

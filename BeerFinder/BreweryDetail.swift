@@ -32,8 +32,10 @@ struct BreweryDetail: View {
                     Text(brewery.country)
                         .font(.subheadline)
                 }
+                Text(brewery.description)
+                    .padding(.top)
             }
-            .padding()
+            .padding([.top, .leading, .trailing])
             
             Spacer()
         }

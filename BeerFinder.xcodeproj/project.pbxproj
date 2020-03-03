@@ -22,6 +22,9 @@
 		843D39EF240DAB030080A317 /* breweryData.json in Resources */ = {isa = PBXBuildFile; fileRef = 843D39EE240DAB030080A317 /* breweryData.json */; };
 		843D39F1240DB1790080A317 /* BreweryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D39F0240DB1790080A317 /* BreweryRow.swift */; };
 		84485AD7240DB4270050657F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84485AD6240DB4270050657F /* Data.swift */; };
+		848CBDE1240E53BA00984204 /* het_ij.png in Resources */ = {isa = PBXBuildFile; fileRef = 848CBDDE240E53BA00984204 /* het_ij.png */; };
+		848CBDE2240E53BA00984204 /* eeuwige_jeugd.png in Resources */ = {isa = PBXBuildFile; fileRef = 848CBDDF240E53BA00984204 /* eeuwige_jeugd.png */; };
+		848CBDE3240E53BA00984204 /* noord.png in Resources */ = {isa = PBXBuildFile; fileRef = 848CBDE0240E53BA00984204 /* noord.png */; };
 		84A963DC240DBA12006AAFB9 /* BreweryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A963DB240DBA12006AAFB9 /* BreweryList.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +67,9 @@
 		843D39EE240DAB030080A317 /* breweryData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = breweryData.json; sourceTree = "<group>"; };
 		843D39F0240DB1790080A317 /* BreweryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryRow.swift; sourceTree = "<group>"; };
 		84485AD6240DB4270050657F /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		848CBDDE240E53BA00984204 /* het_ij.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = het_ij.png; path = ../../../../Desktop/het_ij.png; sourceTree = "<group>"; };
+		848CBDDF240E53BA00984204 /* eeuwige_jeugd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = eeuwige_jeugd.png; path = ../../../../Desktop/eeuwige_jeugd.png; sourceTree = "<group>"; };
+		848CBDE0240E53BA00984204 /* noord.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = noord.png; path = ../../../../Desktop/noord.png; sourceTree = "<group>"; };
 		84A963DB240DBA12006AAFB9 /* BreweryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -161,6 +167,9 @@
 		842F1BF6240D9DEC007F572F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				848CBDDF240E53BA00984204 /* eeuwige_jeugd.png */,
+				848CBDDE240E53BA00984204 /* het_ij.png */,
+				848CBDE0240E53BA00984204 /* noord.png */,
 				842F1BF7240D9F71007F572F /* amsterdam_small.png */,
 				843D39EE240DAB030080A317 /* breweryData.json */,
 			);
@@ -280,10 +289,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848CBDE2240E53BA00984204 /* eeuwige_jeugd.png in Resources */,
 				842F1BF8240D9F71007F572F /* amsterdam_small.png in Resources */,
 				842F1BCD240D98A1007F572F /* LaunchScreen.storyboard in Resources */,
 				842F1BCA240D98A1007F572F /* Preview Assets.xcassets in Resources */,
 				842F1BC7240D98A1007F572F /* Assets.xcassets in Resources */,
+				848CBDE1240E53BA00984204 /* het_ij.png in Resources */,
+				848CBDE3240E53BA00984204 /* noord.png in Resources */,
 				843D39EF240DAB030080A317 /* breweryData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
