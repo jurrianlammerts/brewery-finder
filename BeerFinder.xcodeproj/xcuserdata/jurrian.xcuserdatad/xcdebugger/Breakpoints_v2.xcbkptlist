@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "2BA183DC-A24D-4E84-A5A9-D0C655EB9F23"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "217D8AF9-D23F-4A02-B070-24B9FF238F1D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BeerFinder/Api.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "fetchBeers(withCompletion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "217D8AF9-D23F-4A02-B070-24B9FF238F1D - b0b82d61e0b89506"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in BeerFinder.Api.fetchBeers(withCompletion: (Swift.Optional&lt;Swift.Array&lt;BeerFinder.Beer&gt;&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "BeerFinder"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jurrian/Code/BeerFinder/BeerFinder/Api.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "964">
+               </Location>
+               <Location
+                  uuid = "217D8AF9-D23F-4A02-B070-24B9FF238F1D - 8d7c5b1acc390292"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in BeerFinder.Api.fetchBeers(withCompletion: (Swift.Optional&lt;Swift.Array&lt;BeerFinder.Beer&gt;&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "BeerFinder"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jurrian/Code/BeerFinder/BeerFinder/Api.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "41">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
