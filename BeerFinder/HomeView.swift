@@ -17,7 +17,6 @@ struct HomeView: View {
                     VStack{
                         Image("beer")
 
-                        
                         Text("Beer")
                     }
             }.tag(1)
@@ -27,10 +26,18 @@ struct HomeView: View {
                     VStack{
                         Image("boiler")
 
-                        
                         Text("Brewery")
                     }
             }.tag(2)
+            
+            SettingView()
+                .tabItem{
+                    VStack{
+                        Image("settings")
+                        
+                        Text("Settings")
+                    }
+            }.tag(3)
         }
     }
 }
