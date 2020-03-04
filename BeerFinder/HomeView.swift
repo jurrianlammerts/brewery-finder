@@ -15,8 +15,6 @@ struct HomeView: View {
             BeerList()
                 .tabItem{
                     VStack{
-                        Image("beer")
-
                         Text("Beer")
                     }
             }.tag(1)
@@ -24,20 +22,23 @@ struct HomeView: View {
             BreweryList()
                 .tabItem{
                     VStack{
-                        Image("boiler")
-
-                        Text("Brewery")
+                        Text("Breweries")
                     }
             }.tag(2)
             
-            SettingView()
+            BreweryMap()
                 .tabItem{
                     VStack{
-                        Image("settings")
-                        
+                        Text("Map")
+                }
+            }.tag(3)
+            
+            SettingsView()
+                .tabItem{
+                    VStack{
                         Text("Settings")
                     }
-            }.tag(3)
+            }.tag(4)
         }
     }
 }

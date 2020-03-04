@@ -14,9 +14,9 @@ struct BreweryDetail: View {
     
     var body: some View {
         VStack {
-            MapView(coordinate: brewery.locationCoordinate)
-                .edgesIgnoringSafeArea(.top)
-                .frame(height: 300)
+//            MapView(coordinate: brewery.locationCoordinate)
+//                .edgesIgnoringSafeArea(.top)
+//                .frame(height: 300)
             
             CircleImage(image: brewery.image)
                 .offset(y: -120)

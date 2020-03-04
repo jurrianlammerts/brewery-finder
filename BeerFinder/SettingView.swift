@@ -7,30 +7,20 @@
 //
 
 import SwiftUI
+import Combine
 
-struct SettingView: View {
-    
-    var settingsList = [
-        Setting(id: 1, title: "Language", description: "Change the language of the App", values: ["Dutch", "English"]),
-        Setting(id: 2, title: "Time", description: "Change the time of the App", values: ["Dutch", "English"])
-    ]
+struct SettingsView : View {
+    @ObservedObject var setting = Settings()
     
     var body: some View {
         NavigationView {
-            List(settingsList, id: \.title) { setting in
-                HStack {
-                    NavigationLink(destination: SettingDetail(setting: setting)) {
-                        Text(setting.title)
-                    }
+            Form {
+                Section {
+                    GPSView()
                 }
-                .navigationBarTitle(Text("Settings"))
             }
+            .navigationBarTitle(Text("Settings")).font(.largeTitle)
         }
     }
 }
 
-struct SettingView_Previews: PreviewProvider {
-    static var previews: some View {
-        SettingView()
-    }
-}

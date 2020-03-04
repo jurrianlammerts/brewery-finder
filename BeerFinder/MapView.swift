@@ -11,21 +11,21 @@ import SwiftUI
 import MapKit
 
 struct MapView: UIViewRepresentable {
-    var coordinate: CLLocationCoordinate2D
+    
+    let landmarks = Landmark.requestMockData()
 
-    func makeUIView(context: Context) -> MKMapView {
+    func makeUIView(context: Context) -> MKMapView{
         MKMapView(frame: .zero)
     }
-
-    func updateUIView(_ view: MKMapView, context: Context) {
-        let span = MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02)
-        let region = MKCoordinateRegion(center: coordinate, span: span)
-        view.setRegion(region, animated: true)
+    
+    func updateUIView(_ view: MKMapView, context: Context){
+        //passing model array here
+        view.addAnnotations(landmarks)
     }
 }
 
-struct MapView_Preview: PreviewProvider {
+struct MapView_Previews: PreviewProvider {
     static var previews: some View {
-        MapView(coordinate: breweryData[0].locationCoordinate)
+        MapView()
     }
 }

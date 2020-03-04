@@ -28,8 +28,6 @@ class Api {
             do {
                 let beers = try JSONDecoder().decode([Beer].self, from: data)
                 
-                print(beers)
-                
                 DispatchQueue.main.async {
                     completion(beers)
                 }
@@ -37,9 +35,6 @@ class Api {
             } catch {
                 print(error)
             }
-            
         }.resume()
-        
     }
-    
 }
