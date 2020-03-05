@@ -13,31 +13,42 @@ import MapKit
 struct MapView: UIViewRepresentable {
     
     let breweries : [BreweryViewModel]
+    let center: CLLocationCoordinate2D
+    @ObservedObject var settings = Settings()
     
     func makeUIView(context: Context) -> MKMapView{
         let map = MKMapView()
-//        map.setRegion()
         map.showsUserLocation = true
         map.delegate = context.coordinator
         return map
     }
     
-
-    
     func makeCoordinator() -> Coordinator {
         Coordinator(self)
+    }
+    
+    func centerMapOnLocation(_ location: CLLocationCoordinate2D, mapView: MKMapView) {
+        let regionRadius: CLLocationDistance = 1000
+        let coordinateRegion = MKCoordinateRegion(center: location, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
+        mapView.setRegion(coordinateRegion, animated: true)
     }
     
     func updateUIView(_ view: MKMapView, context: Context){
         for brewery in breweries    {
             let locations = brewery.locations.map { location ->  MKAnnotation in
-                print(location)
                 let annotation = MKPointAnnotation()
                 annotation.title = location.name
                 annotation.coordinate = CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude)
                 return annotation
             }
             view.addAnnotations(locations)
+            
+            if settings.isGPSOn {
+                centerMapOnLocation(center, mapView: view)
+            } else {
+                view.showsUserLocation = false
+            }
+            
         }
     }
     

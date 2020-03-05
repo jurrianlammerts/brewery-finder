@@ -7,19 +7,20 @@
 //
 
 import Combine
+import Foundation
 
 class Settings: ObservableObject {
     var didChange = PassthroughSubject<Void, Never>()
     
-    @Published var isGPSOn = false { didSet { update() } }
+    @Published var isGPSOn = false { didSet { updateGPS() } }
     
-    @Published var types = ["Off","On"]
-    @Published var type = 0 { didSet { update() } }
+    init() {
+        isGPSOn = UserDefaults.standard.bool(forKey: "gps")
+    }
     
-    @Published var isToggleOn = false { didSet { update() } }
     
-    func update() {
-        didChange.send(())
+    func updateGPS() {
+        UserDefaults.standard.set(isGPSOn, forKey: "gps")
     }
 }
 

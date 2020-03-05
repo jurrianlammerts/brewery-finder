@@ -14,19 +14,12 @@
 		842F1BCD240D98A1007F572F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842F1BCB240D98A1007F572F /* LaunchScreen.storyboard */; };
 		842F1BD8240D98A2007F572F /* BeerFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F1BD7240D98A2007F572F /* BeerFinderTests.swift */; };
 		842F1BE3240D98A2007F572F /* BeerFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F1BE2240D98A2007F572F /* BeerFinderUITests.swift */; };
-		842F1BF5240D9CE7007F572F /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F1BF4240D9CE7007F572F /* CircleImage.swift */; };
-		842F1BF8240D9F71007F572F /* amsterdam_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 842F1BF7240D9F71007F572F /* amsterdam_small.png */; };
 		842F1BFA240DA092007F572F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F1BF9240DA092007F572F /* MapView.swift */; };
 		84398AA1240E9DA500D087E8 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 84398AA0240E9DA500D087E8 /* URLImage */; };
 		84398AA3240EA93100D087E8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84398AA2240EA93100D087E8 /* HomeView.swift */; };
 		84398AA9240EAE2200D087E8 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84398AA8240EAE2200D087E8 /* SettingView.swift */; };
-		84398AAD240EAF0200D087E8 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84398AAC240EAF0200D087E8 /* Option.swift */; };
 		843D39ED240DAA2D0080A317 /* Brewery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D39EC240DAA2D0080A317 /* Brewery.swift */; };
-		84485AD7240DB4270050657F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84485AD6240DB4270050657F /* Data.swift */; };
 		845646A4240E97130086D6B2 /* BeerDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845646A3240E97130086D6B2 /* BeerDetail.swift */; };
-		848CBDE1240E53BA00984204 /* het_ij.png in Resources */ = {isa = PBXBuildFile; fileRef = 848CBDDE240E53BA00984204 /* het_ij.png */; };
-		848CBDE2240E53BA00984204 /* eeuwige_jeugd.png in Resources */ = {isa = PBXBuildFile; fileRef = 848CBDDF240E53BA00984204 /* eeuwige_jeugd.png */; };
-		848CBDE3240E53BA00984204 /* noord.png in Resources */ = {isa = PBXBuildFile; fileRef = 848CBDE0240E53BA00984204 /* noord.png */; };
 		84CA8ABE240E7529006842B9 /* BeerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CA8ABD240E7529006842B9 /* BeerList.swift */; };
 		84CA8AC0240E76C9006842B9 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CA8ABF240E76C9006842B9 /* Beer.swift */; };
 		84CA8AC2240E7780006842B9 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CA8AC1240E7780006842B9 /* Api.swift */; };
@@ -36,7 +29,6 @@
 		84EB6CE3240FC0290029157D /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB6CE2240FC0290029157D /* Settings.swift */; };
 		84EB6CE5240FC1690029157D /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB6CE4240FC1690029157D /* ActivityIndicator.swift */; };
 		84EB6CE7240FC3310029157D /* BreweryMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB6CE6240FC3310029157D /* BreweryMap.swift */; };
-		84EB6CE9240FC43C0029157D /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB6CE8240FC43C0029157D /* Landmark.swift */; };
 		84EB6CF4240FF4250029157D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB6CF3240FF4250029157D /* Coordinator.swift */; };
 		84EB6CF7240FF4D50029157D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB6CF6240FF4D50029157D /* LocationManager.swift */; };
 		84EB6CF9240FFE800029157D /* BreweryMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB6CF8240FFE800029157D /* BreweryMapViewModel.swift */; };
@@ -73,18 +65,11 @@
 		842F1BDE240D98A2007F572F /* BeerFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeerFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		842F1BE2240D98A2007F572F /* BeerFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerFinderUITests.swift; sourceTree = "<group>"; };
 		842F1BE4240D98A2007F572F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		842F1BF4240D9CE7007F572F /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CircleImage.swift; path = BeerFinder/Views/CircleImage.swift; sourceTree = SOURCE_ROOT; };
-		842F1BF7240D9F71007F572F /* amsterdam_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = amsterdam_small.png; path = ../../../../Desktop/amsterdam_small.png; sourceTree = "<group>"; };
 		842F1BF9240DA092007F572F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		84398AA2240EA93100D087E8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		84398AA8240EAE2200D087E8 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
-		84398AAC240EAF0200D087E8 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
 		843D39EC240DAA2D0080A317 /* Brewery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brewery.swift; sourceTree = "<group>"; };
-		84485AD6240DB4270050657F /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		845646A3240E97130086D6B2 /* BeerDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetail.swift; sourceTree = "<group>"; };
-		848CBDDE240E53BA00984204 /* het_ij.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = het_ij.png; path = ../../../../Desktop/het_ij.png; sourceTree = "<group>"; };
-		848CBDDF240E53BA00984204 /* eeuwige_jeugd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = eeuwige_jeugd.png; path = ../../../../Desktop/eeuwige_jeugd.png; sourceTree = "<group>"; };
-		848CBDE0240E53BA00984204 /* noord.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = noord.png; path = ../../../../Desktop/noord.png; sourceTree = "<group>"; };
 		84CA8ABD240E7529006842B9 /* BeerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerList.swift; sourceTree = "<group>"; };
 		84CA8ABF240E76C9006842B9 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 		84CA8AC1240E7780006842B9 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
@@ -95,7 +80,6 @@
 		84EB6CE2240FC0290029157D /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		84EB6CE4240FC1690029157D /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		84EB6CE6240FC3310029157D /* BreweryMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryMap.swift; sourceTree = "<group>"; };
-		84EB6CE8240FC43C0029157D /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		84EB6CF3240FF4250029157D /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		84EB6CF6240FF4D50029157D /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		84EB6CF8240FFE800029157D /* BreweryMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryMapViewModel.swift; sourceTree = "<group>"; };
@@ -153,7 +137,6 @@
 				84EB6CF5240FF4C10029157D /* Managers */,
 				84EB6CF2240FF40C0029157D /* Coordinators */,
 				84485AD5240DB3E60050657F /* Models */,
-				842F1BF6240D9DEC007F572F /* Resources */,
 				84EB6CEE240FF2550029157D /* Beer */,
 				84EB6CEF240FF2700029157D /* Brewery */,
 				84EB6CF0240FF2AC0029157D /* Views */,
@@ -196,26 +179,12 @@
 			path = BeerFinderUITests;
 			sourceTree = "<group>";
 		};
-		842F1BF6240D9DEC007F572F /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				848CBDDF240E53BA00984204 /* eeuwige_jeugd.png */,
-				848CBDDE240E53BA00984204 /* het_ij.png */,
-				848CBDE0240E53BA00984204 /* noord.png */,
-				842F1BF7240D9F71007F572F /* amsterdam_small.png */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		84485AD5240DB3E60050657F /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				84CA8AC3240E8C66006842B9 /* View Models */,
 				843D39EC240DAA2D0080A317 /* Brewery.swift */,
-				84485AD6240DB4270050657F /* Data.swift */,
 				84CA8ABF240E76C9006842B9 /* Beer.swift */,
-				84398AAC240EAF0200D087E8 /* Option.swift */,
-				84EB6CE8240FC43C0029157D /* Landmark.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -251,7 +220,6 @@
 			isa = PBXGroup;
 			children = (
 				84EB6CF1240FF2CB0029157D /* Map */,
-				842F1BF4240D9CE7007F572F /* CircleImage.swift */,
 				84398AA8240EAE2200D087E8 /* SettingView.swift */,
 				84EB6CE0240FBF400029157D /* GPSView.swift */,
 				84398AA2240EA93100D087E8 /* HomeView.swift */,
@@ -394,13 +362,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				848CBDE2240E53BA00984204 /* eeuwige_jeugd.png in Resources */,
-				842F1BF8240D9F71007F572F /* amsterdam_small.png in Resources */,
 				842F1BCD240D98A1007F572F /* LaunchScreen.storyboard in Resources */,
 				842F1BCA240D98A1007F572F /* Preview Assets.xcassets in Resources */,
 				842F1BC7240D98A1007F572F /* Assets.xcassets in Resources */,
-				848CBDE1240E53BA00984204 /* het_ij.png in Resources */,
-				848CBDE3240E53BA00984204 /* noord.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,17 +397,13 @@
 				84CA8AC0240E76C9006842B9 /* Beer.swift in Sources */,
 				84EB6CF9240FFE800029157D /* BreweryMapViewModel.swift in Sources */,
 				842F1BFA240DA092007F572F /* MapView.swift in Sources */,
-				842F1BF5240D9CE7007F572F /* CircleImage.swift in Sources */,
 				84CA8AC2240E7780006842B9 /* Api.swift in Sources */,
 				84398AA9240EAE2200D087E8 /* SettingView.swift in Sources */,
 				84EB6CE7240FC3310029157D /* BreweryMap.swift in Sources */,
 				84EB6CF7240FF4D50029157D /* LocationManager.swift in Sources */,
 				843D39ED240DAA2D0080A317 /* Brewery.swift in Sources */,
 				84CA8ABE240E7529006842B9 /* BeerList.swift in Sources */,
-				84EB6CE9240FC43C0029157D /* Landmark.swift in Sources */,
 				84EB6CE5240FC1690029157D /* ActivityIndicator.swift in Sources */,
-				84485AD7240DB4270050657F /* Data.swift in Sources */,
-				84398AAD240EAF0200D087E8 /* Option.swift in Sources */,
 				84EB6CE3240FC0290029157D /* Settings.swift in Sources */,
 				84EB6CF4240FF4250029157D /* Coordinator.swift in Sources */,
 				84398AA3240EA93100D087E8 /* HomeView.swift in Sources */,

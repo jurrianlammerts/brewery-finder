@@ -32,7 +32,7 @@ struct HomeView: View {
                         Text("Settings")
                     }
             }.tag(4)
-        }
+        }.edgesIgnoringSafeArea(.top)
     }
 }
 

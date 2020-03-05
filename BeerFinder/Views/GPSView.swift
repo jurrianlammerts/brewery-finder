@@ -10,10 +10,10 @@ import SwiftUI
 import Combine
 
 struct GPSView: View {
-    @ObservedObject var gps = Settings()
+    @ObservedObject var settings = Settings()
     
     var body: some View {
-        return NavigationLink(destination: ToggleGPSView(gps: gps)) {
+        return NavigationLink(destination: ToggleGPSView(settings: settings)) {
             HStack() {
                 Image("default")
                     .resizable()
@@ -25,7 +25,7 @@ struct GPSView: View {
                     .foregroundColor(.blue)
                     .font(.system(size: 20))
                     .frame(width: 150,height: 40, alignment: .leading)
-                Text(gps.isGPSOn ? "On" : "Off")
+                Text(settings.isGPSOn ? "On" : "Off")
                     .foregroundColor(.gray)
                     .font(.system(size: 20))
                     .font(.subheadline)
@@ -37,23 +37,13 @@ struct GPSView: View {
 
 
 struct ToggleGPSView: View {
-    @ObservedObject var gps: Settings
+    @ObservedObject var settings: Settings
     
     var body: some View {
         Form {
             Section(header: Text("ENABLE TO FIND NEARBY BREWERIES")) {
-                Toggle(isOn: $gps.isGPSOn) {
+                Toggle(isOn: $settings.isGPSOn) {
                     Text("GPS").font(.system(size: 18))
-                }
-                
-                if gps.isGPSOn {
-                    HStack {
-                        Text("Locating signal")
-                            .foregroundColor(.gray)
-                            .font(.system(size: 18))
-                            .font(.system(.subheadline))
-                        ActivityIndicator(style: .medium)
-                    }
                 }
             }
         }

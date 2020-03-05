@@ -7,15 +7,21 @@
 //
 
 import SwiftUI
+import MapKit
+
 
 struct BreweryMap: View {
     
     @ObservedObject private var breweryMapVM = BreweryMapViewModel()
+    @ObservedObject private var locationManager = LocationManager()
     
     var body: some View {
-        MapView(breweries: self.breweryMapVM.breweries)
-            .edgesIgnoringSafeArea(.top)
         
+        let userCoordinate = self.locationManager.location != nil ? self.locationManager.location!.coordinate: CLLocationCoordinate2D()
+        
+        return ZStack {
+            MapView(breweries: self.breweryMapVM.breweries, center: userCoordinate)
+        }.edgesIgnoringSafeArea(.top)
     }
 }
 
