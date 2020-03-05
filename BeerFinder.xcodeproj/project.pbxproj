@@ -25,6 +25,7 @@
 		84CA8AC2240E7780006842B9 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CA8AC1240E7780006842B9 /* Api.swift */; };
 		84CA8AC5240E8C7B006842B9 /* BeerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CA8AC4240E8C7B006842B9 /* BeerListViewModel.swift */; };
 		84CA8AC7240E9441006842B9 /* BeerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CA8AC6240E9441006842B9 /* BeerRow.swift */; };
+		84CB61472411454A00D7768F /* SwiftSVG in Frameworks */ = {isa = PBXBuildFile; productRef = 84CB61462411454A00D7768F /* SwiftSVG */; };
 		84EB6CE1240FBF400029157D /* GPSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB6CE0240FBF400029157D /* GPSView.swift */; };
 		84EB6CE3240FC0290029157D /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB6CE2240FC0290029157D /* Settings.swift */; };
 		84EB6CE5240FC1690029157D /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB6CE4240FC1690029157D /* ActivityIndicator.swift */; };
@@ -91,6 +92,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84398AA1240E9DA500D087E8 /* URLImage in Frameworks */,
+				84CB61472411454A00D7768F /* SwiftSVG in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +139,6 @@
 				84EB6CF5240FF4C10029157D /* Managers */,
 				84EB6CF2240FF40C0029157D /* Coordinators */,
 				84485AD5240DB3E60050657F /* Models */,
-				84EB6CEE240FF2550029157D /* Beer */,
-				84EB6CEF240FF2700029157D /* Brewery */,
 				84EB6CF0240FF2AC0029157D /* Views */,
 				842F1BC2240D98A0007F572F /* SceneDelegate.swift */,
 				84EB6CE2240FC0290029157D /* Settings.swift */,
@@ -198,41 +198,35 @@
 			path = "View Models";
 			sourceTree = "<group>";
 		};
-		84EB6CEE240FF2550029157D /* Beer */ = {
+		84EB6CEE240FF2550029157D /* BeerView */ = {
 			isa = PBXGroup;
 			children = (
 				845646A3240E97130086D6B2 /* BeerDetail.swift */,
 				84CA8AC6240E9441006842B9 /* BeerRow.swift */,
 				84CA8ABD240E7529006842B9 /* BeerList.swift */,
 			);
-			path = Beer;
+			path = BeerView;
 			sourceTree = "<group>";
 		};
-		84EB6CEF240FF2700029157D /* Brewery */ = {
+		84EB6CEF240FF2700029157D /* BreweryView */ = {
 			isa = PBXGroup;
 			children = (
 				84EB6CE6240FC3310029157D /* BreweryMap.swift */,
 			);
-			path = Brewery;
+			path = BreweryView;
 			sourceTree = "<group>";
 		};
 		84EB6CF0240FF2AC0029157D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				84EB6CF1240FF2CB0029157D /* Map */,
+				84EB6CEF240FF2700029157D /* BreweryView */,
+				84EB6CEE240FF2550029157D /* BeerView */,
+				842F1BF9240DA092007F572F /* MapView.swift */,
 				84398AA8240EAE2200D087E8 /* SettingView.swift */,
 				84EB6CE0240FBF400029157D /* GPSView.swift */,
 				84398AA2240EA93100D087E8 /* HomeView.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		84EB6CF1240FF2CB0029157D /* Map */ = {
-			isa = PBXGroup;
-			children = (
-				842F1BF9240DA092007F572F /* MapView.swift */,
-			);
-			path = Map;
 			sourceTree = "<group>";
 		};
 		84EB6CF2240FF40C0029157D /* Coordinators */ = {
@@ -269,6 +263,7 @@
 			name = BeerFinder;
 			packageProductDependencies = (
 				84398AA0240E9DA500D087E8 /* URLImage */,
+				84CB61462411454A00D7768F /* SwiftSVG */,
 			);
 			productName = BeerFinder;
 			productReference = 842F1BBD240D98A0007F572F /* BeerFinder.app */;
@@ -345,6 +340,7 @@
 			mainGroup = 842F1BB4240D98A0007F572F;
 			packageReferences = (
 				84398A9F240E9DA500D087E8 /* XCRemoteSwiftPackageReference "url-image" */,
+				84CB61452411454A00D7768F /* XCRemoteSwiftPackageReference "SwiftSVG" */,
 			);
 			productRefGroup = 842F1BBE240D98A0007F572F /* Products */;
 			projectDirPath = "";
@@ -745,6 +741,14 @@
 				minimumVersion = 0.9.10;
 			};
 		};
+		84CB61452411454A00D7768F /* XCRemoteSwiftPackageReference "SwiftSVG" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mchoe/SwiftSVG";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -752,6 +756,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 84398A9F240E9DA500D087E8 /* XCRemoteSwiftPackageReference "url-image" */;
 			productName = URLImage;
+		};
+		84CB61462411454A00D7768F /* SwiftSVG */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84CB61452411454A00D7768F /* XCRemoteSwiftPackageReference "SwiftSVG" */;
+			productName = SwiftSVG;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

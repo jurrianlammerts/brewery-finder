@@ -12,7 +12,7 @@ class Api {
     
     func fetchBeers(withCompletion completion: @escaping ([Beer]?) -> Void) {
         
-        guard let url = URL(string: "https://api.punkapi.com/v2/beers/?page=1&per_page=10") else {
+        guard let url = URL(string: "https://api.punkapi.com/v2/beers") else {
             fatalError("Invalid URL")
         }
         

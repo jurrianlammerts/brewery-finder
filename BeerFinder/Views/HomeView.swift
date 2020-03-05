@@ -10,11 +10,14 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
+        
+        
         TabView{
             
             BeerList()
                 .tabItem{
                     VStack{
+                        Image(systemName: "list.dash")
                         Text("Beer")
                     }
             }.tag(1)
@@ -22,13 +25,15 @@ struct HomeView: View {
             BreweryMap()
                 .tabItem{
                     VStack{
+                        Image(systemName: "location")
                         Text("Map")
-                }
+                    }
             }.tag(3)
             
             SettingsView()
                 .tabItem{
                     VStack{
+                        Image(systemName: "gear")
                         Text("Settings")
                     }
             }.tag(4)
