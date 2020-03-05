@@ -19,13 +19,6 @@ struct HomeView: View {
                     }
             }.tag(1)
             
-            BreweryList()
-                .tabItem{
-                    VStack{
-                        Text("Breweries")
-                    }
-            }.tag(2)
-            
             BreweryMap()
                 .tabItem{
                     VStack{

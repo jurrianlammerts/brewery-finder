@@ -6,32 +6,19 @@
 //  Copyright © 2020 Jurrian Lammerts. All rights reserved.
 //
 
-import SwiftUI
-import CoreLocation
+import Foundation
 
-struct Brewery: Hashable, Codable, Identifiable {
-    var id: Int
-    var name: String
-    var description: String
-    fileprivate var imageName: String
-    fileprivate var coordinates: Coordinates
-    var country: String
-    var city: String
-
-    var locationCoordinate: CLLocationCoordinate2D {
-        CLLocationCoordinate2D(
-            latitude: coordinates.latitude,
-            longitude: coordinates.longitude)
-    }
+struct Response: Codable {
+    let currentPage, numberOfPages, totalResults: Int
+    let data: [Brewery]
 }
 
-extension Brewery {
-    var image: Image {
-        ImageStore.shared.image(name: imageName)
-    }
+struct Brewery: Codable, Identifiable {
+    let id, name: String
+    let locations: [Location]?
 }
 
-struct Coordinates: Hashable, Codable {
-    var latitude: Double
-    var longitude: Double
+struct Location: Codable {
+    let id, name: String
+    let latitude, longitude: Double
 }

@@ -16,13 +16,13 @@ struct BeerRow: View {
         HStack {
             
             URLImage(beer.image_url,
-            delay: 0.25,
-            processors: [ Resize(size: CGSize(width: 100.0, height: 100.0), scale: UIScreen.main.scale) ],
-            content:  {
-                $0.image
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .clipped()
+                     delay: 0.25,
+                     processors: [ Resize(size: CGSize(width: 100.0, height: 100.0), scale: UIScreen.main.scale) ],
+                     content:  {
+                        $0.image
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .clipped()
             })
                 .frame(width: 14.0, height: 14.0)
             

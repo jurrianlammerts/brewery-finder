@@ -37,4 +37,32 @@ class Api {
             }
         }.resume()
     }
+    
+    func fetchBreweries(withCompletion completion: @escaping (Response?) -> Void) {
+        
+        guard let url = URL(string: "https://sandbox-api.brewerydb.com/v2/breweries/?key=fb610d20aa9b20208d189285b83afa13&withLocations=Y") else {
+            fatalError("Invalid URL")
+        }
+        
+        URLSession.shared.dataTask(with: url){ data, response, error in
+            
+            guard let data = data, error == nil else{
+                DispatchQueue.main.async {
+                    completion(nil)
+                }
+                return
+            }
+            
+            do {
+                let reponse = try? JSONDecoder().decode(Response.self, from: data)
+                
+                DispatchQueue.main.async {
+                    completion(reponse)
+                }
+                
+            } catch {
+                print(error)
+            }
+        }.resume()
+    }
 }

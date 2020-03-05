@@ -9,14 +9,13 @@
 import SwiftUI
 
 struct BreweryMap: View {
+    
+    @ObservedObject private var breweryMapVM = BreweryMapViewModel()
+    
     var body: some View {
-        MapView()
+        MapView(breweries: self.breweryMapVM.breweries)
+            .edgesIgnoringSafeArea(.top)
         
     }
 }
 
-//struct BreweryMap_Previews: PreviewProvider {
-//    static var previews: some View {
-//        BreweryMap()
-//    }
-//}
