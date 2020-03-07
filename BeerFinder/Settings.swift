@@ -12,12 +12,13 @@ import Foundation
 class Settings: ObservableObject {
     var didChange = PassthroughSubject<Void, Never>()
     
+    static let shared = Settings()
+    
     @Published var isGPSOn = false { didSet { updateGPS() } }
     
     init() {
         isGPSOn = UserDefaults.standard.bool(forKey: "gps")
     }
-    
     
     func updateGPS() {
         UserDefaults.standard.set(isGPSOn, forKey: "gps")

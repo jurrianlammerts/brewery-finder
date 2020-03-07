@@ -24,6 +24,7 @@ final class Coordinator:  NSObject, MKMapViewDelegate {
                 if annotation is MKUserLocation {
                     
                     let region  = MKCoordinateRegion(center: annotation.coordinate, latitudinalMeters: 5000000, longitudinalMeters: 5000000)
+                    
                     mapView.setRegion(region, animated: true)
                 }
                 

@@ -10,7 +10,6 @@ import SwiftUI
 import Combine
 
 struct SettingsView : View {
-    @ObservedObject var setting = Settings()
     
     var body: some View {
         NavigationView {
@@ -19,7 +18,7 @@ struct SettingsView : View {
                     GPSView()
                 }
             }
-            .navigationBarTitle(Text("Settings")).font(.largeTitle)
+            .navigationBarTitle("Settings")
         }
     }
 }

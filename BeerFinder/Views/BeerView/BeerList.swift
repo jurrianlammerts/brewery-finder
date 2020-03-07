@@ -13,7 +13,9 @@ struct BeerList: View {
     @ObservedObject private var beerListVM = BeerListViewModel()
     
     var body: some View {
-        NavigationView {
+        NavigationView{
+            
+            
             List(self.beerListVM.beers, id: \.name) { item in
                 NavigationLink(destination: BeerDetail(beer: item.beer)) {
                     BeerRow(beer: item.beer)

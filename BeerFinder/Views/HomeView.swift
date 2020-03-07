@@ -8,12 +8,16 @@
 
 import SwiftUI
 
+class HomeViewController:ObservableObject {
+     @Published var selection: Int = 0
+}
+
 struct HomeView: View {
+    
+    @State private var selectedTab: Int = 0
+    
     var body: some View {
-        
-        
-        TabView{
-            
+        TabView(selection: $selectedTab){
             BeerList()
                 .tabItem{
                     VStack{
@@ -21,22 +25,21 @@ struct HomeView: View {
                         Text("Beer")
                     }
             }.tag(1)
-            
-            BreweryMap()
+            BreweryMap(selection: $selectedTab)
                 .tabItem{
                     VStack{
                         Image(systemName: "location")
                         Text("Map")
                     }
-            }.tag(3)
-            
+            }.tag(2)
             SettingsView()
                 .tabItem{
                     VStack{
                         Image(systemName: "gear")
                         Text("Settings")
                     }
-            }.tag(4)
+            }.tag(3)
+            
         }.edgesIgnoringSafeArea(.top)
     }
 }

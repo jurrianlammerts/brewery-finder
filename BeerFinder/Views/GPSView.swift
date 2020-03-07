@@ -10,24 +10,18 @@ import SwiftUI
 import Combine
 
 struct GPSView: View {
-    @ObservedObject var settings = Settings()
+    @ObservedObject var settings = Settings.shared
     
     var body: some View {
         return NavigationLink(destination: ToggleGPSView(settings: settings)) {
             HStack() {
-                Image("default")
-                    .resizable()
-                    .cornerRadius(12)
-                    .frame(width: 25, height: 25)
-                    .clipped()
-                    .aspectRatio(contentMode: .fit)
                 Text("GPS")
                     .foregroundColor(.blue)
-                    .font(.system(size: 20))
+                    .font(.system(size: 18))
                     .frame(width: 150,height: 40, alignment: .leading)
                 Text(settings.isGPSOn ? "On" : "Off")
                     .foregroundColor(.gray)
-                    .font(.system(size: 20))
+                    .font(.system(size: 18))
                     .font(.subheadline)
                     .frame(width: 170, height: 40, alignment: .trailing)
             }
