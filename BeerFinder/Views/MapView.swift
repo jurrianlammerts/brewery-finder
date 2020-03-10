@@ -12,7 +12,8 @@ import MapKit
 
 struct MapView: UIViewRepresentable {
     
-    let breweries : [BreweryViewModel]
+    var breweries : [BreweryViewModel]
+    var dutchBreweries : [BreweryViewModel]
     let coordinate: CLLocationCoordinate2D
     @ObservedObject var settings = Settings.shared
     
@@ -46,6 +47,16 @@ struct MapView: UIViewRepresentable {
         
         // Loop over all breweries and plot on map
         for brewery in breweries{
+            let locations = brewery.locations.map { location ->  MKAnnotation in
+                let annotation = MKPointAnnotation()
+                annotation.title = location.name
+                annotation.coordinate = CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude)
+                return annotation
+            }
+            view.addAnnotations(locations)
+        }
+        
+        for brewery in dutchBreweries{
             let locations = brewery.locations.map { location ->  MKAnnotation in
                 let annotation = MKPointAnnotation()
                 annotation.title = location.name

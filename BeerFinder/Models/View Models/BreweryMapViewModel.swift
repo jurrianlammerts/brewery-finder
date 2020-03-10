@@ -10,20 +10,28 @@ import Foundation
 
 class BreweryMapViewModel: ObservableObject {
     @Published var breweries = [BreweryViewModel]()
+    @Published var dutchBreweries = [BreweryViewModel]()
     
     init(){
         
         Api().fetchBreweries { response in
             
+            let dutchBreweryData: Response = load("breweryData.json")
+            self.dutchBreweries = dutchBreweryData.data.map(BreweryViewModel.init)
+            
             if let response = response {
                 self.breweries = response.data.map(BreweryViewModel.init)
             }
+            
+            let allBreweries = self.dutchBreweries += self.dutchBreweries
+                     
+            print(allBreweries)
         }
     }
 }
 
 
-struct BreweryViewModel {
+struct BreweryViewModel: Codable {
     
     var brewery: Brewery
     

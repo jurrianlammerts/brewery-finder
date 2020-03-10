@@ -1,0 +1,75 @@
+{
+    "currentPage": 1,
+    "numberOfPages": 1,
+    "totalResults": 19,
+    "data": [
+        {
+            "id": "BDT48",
+            "name": "Kaapse Brouwers",
+            "locations": [
+                {
+                    "id": "dMbTUTTHF",
+                    "name": "Kaapse Brouwers",
+                    "latitude": 51.902026,
+                    "longitude": 4.485121
+                }
+            ]
+        },
+        {
+            "id": "BDT4898",
+            "name": "Brouwerij Noordt",
+            "locations": [
+                {
+                    "id": "dMbr3TTHF",
+                    "name": "Brouwerij Noordt",
+                    "latitude": 51.934318,
+                    "longitude": 4.487267
+                }
+            ]
+        },
+        {
+            "id": "BCGD3",
+            "name": "Thoms",
+            "locations": [
+                {
+                    "id": "HS5674f",
+                    "name": "Thoms",
+                    "latitude": 51.922932,
+                    "longitude": 4.481055
+                }
+            ]
+        },
+        {
+            "id": "BCGD3",
+            "name": "Brouwerij 't IJ",
+            "locations": [
+                {
+                    "id": "HS5674f",
+                    "name": "Brouwerij 't IJ",
+                    "latitude": 52.367718,
+                    "longitude": 4.94
+                },
+                {
+                    "id": "HS5674f",
+                    "name": "Brouwerij 't IJ",
+                    "latitude": 52.367565,
+                    "longitude": 4.92649
+                }
+            ]
+        },
+        {
+            "id": "BCGD3",
+            "name": "Walhalla",
+            "locations": [
+                {
+                    "id": "HS5674f",
+                    "name": "Walhalla",
+                    "latitude": 52.385446,
+                    "longitude": 4.920612
+                }
+            ]
+        }
+    ]
+    
+    
+}

@@ -24,7 +24,7 @@ struct BreweryMap: View {
         
         return
             VStack {
-                MapView(breweries: self.breweryMapVM.breweries, coordinate: coordinate)
+                MapView(breweries: self.breweryMapVM.breweries, dutchBreweries: self.breweryMapVM.dutchBreweries, coordinate: coordinate)
             }
             .edgesIgnoringSafeArea(.top)
             .alert(isPresented: $showAlert) {
