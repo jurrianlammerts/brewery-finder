@@ -43,6 +43,7 @@ struct BreweryMap: View {
                 )
             }
             .onAppear(perform: {
+                
                 self.showAlert = !self.settings.isGPSOn
             })
         

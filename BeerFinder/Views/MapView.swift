@@ -14,6 +14,7 @@ struct MapView: UIViewRepresentable {
     
     let breweries : [BreweryViewModel]
     let coordinate: CLLocationCoordinate2D
+    @ObservedObject var settings = Settings.shared
     
     func makeUIView(context: Context) -> MKMapView{
         let map = MKMapView()
@@ -37,6 +38,12 @@ struct MapView: UIViewRepresentable {
     func updateUIView(_ view: MKMapView, context: Context){
         // Remove all annotations
         view.removeAnnotations(view.annotations)
+        
+        if(!self.settings.isGPSOn) {
+            view.showsUserLocation = false
+        } else {
+            view.showsUserLocation = true
+        }
         
         // Loop over all breweries and plot on map
         for brewery in breweries{
