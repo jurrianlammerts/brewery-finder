@@ -20,13 +20,12 @@ struct MapView: UIViewRepresentable {
     func makeUIView(context: Context) -> MKMapView{
         let map = MKMapView()
         map.showsUserLocation = true
-        map.delegate = context.coordinator
+        map.showsScale = true;
+        map.isZoomEnabled = true;
+        
+        // Center map on User location
+        centerMapOnLocation(coordinate, mapView: map)
         return map
-    }
-    
-    // Creates a instance to communicate changes to otger views
-    func makeCoordinator() -> Coordinator {
-        Coordinator(self)
     }
     
     // Center the mapView on the lcation of the user
@@ -38,10 +37,7 @@ struct MapView: UIViewRepresentable {
     }
     
     // Update the view
-    func updateUIView(_ view: MKMapView, context: Context){
-        // Remove all annotations
-        view.removeAnnotations(view.annotations)
-        
+    func updateUIView(_ view: MKMapView, context: Context){        
         if(!self.settings.isGPSOn) {
             view.showsUserLocation = false
         } else {
@@ -59,8 +55,6 @@ struct MapView: UIViewRepresentable {
             view.addAnnotations(locations)
         }
         
-        // Center map on User location
-        centerMapOnLocation(coordinate, mapView: view)
     }
 }
 
