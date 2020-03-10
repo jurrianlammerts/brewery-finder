@@ -16,6 +16,7 @@ struct MapView: UIViewRepresentable {
     let coordinate: CLLocationCoordinate2D
     @ObservedObject var settings = Settings.shared
     
+    // Make the UI View
     func makeUIView(context: Context) -> MKMapView{
         let map = MKMapView()
         map.showsUserLocation = true
@@ -23,10 +24,12 @@ struct MapView: UIViewRepresentable {
         return map
     }
     
+    // Creates a instance to communicate changes to otger views
     func makeCoordinator() -> Coordinator {
         Coordinator(self)
     }
     
+    // Center the mapView on the lcation of the user
     func centerMapOnLocation(_ location: CLLocationCoordinate2D, mapView: MKMapView) {
         let regionRadius: CLLocationDistance = 500000
         let coordinateRegion = MKCoordinateRegion(center: location, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
@@ -34,7 +37,7 @@ struct MapView: UIViewRepresentable {
         mapView.setRegion(coordinateRegion, animated: true)
     }
     
-    
+    // Update the view
     func updateUIView(_ view: MKMapView, context: Context){
         // Remove all annotations
         view.removeAnnotations(view.annotations)

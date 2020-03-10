@@ -9,6 +9,7 @@
 import Foundation
 import MapKit
 
+// Updates views when location changes
 class LocationManager: NSObject, ObservableObject {
     
     private let locationManager = CLLocationManager()
@@ -26,6 +27,7 @@ class LocationManager: NSObject, ObservableObject {
 
 extension LocationManager: CLLocationManagerDelegate {
     
+    // Update location variable when it changes
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
         guard let location = locations.last else {

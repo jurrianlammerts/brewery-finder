@@ -16,22 +16,15 @@ struct BreweryMap: View {
     @Binding var selection: Int
     
     @State private var showAlert: Bool = false
-    @State private var isActive: Bool = false
     
     var body: some View {
         
+        // Coordinates of the User
         let coordinate = self.locationManager.location != nil ? self.locationManager.location!.coordinate: CLLocationCoordinate2D()
         
         return
-            
             VStack {
-                // Hidden link to SettingsView
-                NavigationLink(destination: SettingsView(), isActive: self.$isActive) {
-                    EmptyView()
-                }.hidden()
-                
                 MapView(breweries: self.breweryMapVM.breweries, coordinate: coordinate)
-                
             }
             .edgesIgnoringSafeArea(.top)
             .alert(isPresented: $showAlert) {
@@ -43,15 +36,14 @@ struct BreweryMap: View {
                 )
             }
             .onAppear(perform: {
-                
                 self.showAlert = !self.settings.isGPSOn
             })
-        
     }
     
+    // Take user to SettingsView to change GPS settings
     func pushToView() {
         DispatchQueue.main.async {
-            self.isActive = true
+            // 3 is the index of the SettingsView
             self.selection = 3
         }
     }

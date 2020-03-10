@@ -15,7 +15,7 @@ struct BeerList: View {
     var body: some View {
         NavigationView{
             
-            
+            // Loop over the beers and make a list
             List(self.beerListVM.beers, id: \.name) { item in
                 NavigationLink(destination: BeerDetail(beer: item.beer)) {
                     BeerRow(beer: item.beer)

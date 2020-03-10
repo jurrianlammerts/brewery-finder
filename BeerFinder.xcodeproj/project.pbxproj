@@ -20,7 +20,6 @@
 		84398AA9240EAE2200D087E8 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84398AA8240EAE2200D087E8 /* SettingView.swift */; };
 		843D39ED240DAA2D0080A317 /* Brewery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D39EC240DAA2D0080A317 /* Brewery.swift */; };
 		845646A4240E97130086D6B2 /* BeerDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845646A3240E97130086D6B2 /* BeerDetail.swift */; };
-		8490166D241282FE002FB383 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8490166C241282FE002FB383 /* SwiftUIView.swift */; };
 		84CA8ABE240E7529006842B9 /* BeerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CA8ABD240E7529006842B9 /* BeerList.swift */; };
 		84CA8AC0240E76C9006842B9 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CA8ABF240E76C9006842B9 /* Beer.swift */; };
 		84CA8AC2240E7780006842B9 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CA8AC1240E7780006842B9 /* Api.swift */; };
@@ -72,7 +71,6 @@
 		84398AA8240EAE2200D087E8 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		843D39EC240DAA2D0080A317 /* Brewery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brewery.swift; sourceTree = "<group>"; };
 		845646A3240E97130086D6B2 /* BeerDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetail.swift; sourceTree = "<group>"; };
-		8490166C241282FE002FB383 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		84CA8ABD240E7529006842B9 /* BeerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerList.swift; sourceTree = "<group>"; };
 		84CA8ABF240E76C9006842B9 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 		84CA8AC1240E7780006842B9 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
@@ -118,7 +116,6 @@
 		842F1BB4240D98A0007F572F = {
 			isa = PBXGroup;
 			children = (
-				8490166C241282FE002FB383 /* SwiftUIView.swift */,
 				842F1BBF240D98A0007F572F /* BeerFinder */,
 				842F1BD6240D98A2007F572F /* BeerFinderTests */,
 				842F1BE1240D98A2007F572F /* BeerFinderUITests */,
@@ -402,7 +399,6 @@
 				84EB6CF7240FF4D50029157D /* LocationManager.swift in Sources */,
 				843D39ED240DAA2D0080A317 /* Brewery.swift in Sources */,
 				84CA8ABE240E7529006842B9 /* BeerList.swift in Sources */,
-				8490166D241282FE002FB383 /* SwiftUIView.swift in Sources */,
 				84EB6CE5240FC1690029157D /* ActivityIndicator.swift in Sources */,
 				84EB6CE3240FC0290029157D /* Settings.swift in Sources */,
 				84EB6CF4240FF4250029157D /* Coordinator.swift in Sources */,

@@ -9,14 +9,15 @@
 import Foundation
 import MapKit
 
-final class Coordinator:  NSObject, MKMapViewDelegate {
+// Coordinator class used to deal with UIKit
+final class Coordinator: NSObject, MKMapViewDelegate {
     
     var control: MapView
     
     init(_ control: MapView){
         self.control = control
     }
-    
+        
     func mapView(_ mapView: MKMapView, didAdd views: [MKAnnotationView]) {
         if let annotationView = views.first {
             if let annotation = annotationView.annotation {
