@@ -29,6 +29,12 @@ struct MapView: UIViewRepresentable {
         return map
     }
     
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        let annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier, for: annotation)
+        annotationView.clusteringIdentifier = nil
+        return annotationView
+    }
+    
     // Center the mapView on the lcation of the user
     func centerMapOnLocation(_ location: CLLocationCoordinate2D, mapView: MKMapView) {
         let regionRadius: CLLocationDistance = 500000

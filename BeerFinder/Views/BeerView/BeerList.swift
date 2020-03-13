@@ -21,7 +21,7 @@ struct BeerList: View {
                     BeerRow(beer: item.beer)
                 }
             }
-            .navigationBarTitle(Text("Beers"))
+            .navigationBarTitle(Text("Our favorite beers"))
         }
     }
 }
